@@ -1,0 +1,43 @@
+Warning: Scenario BEST is not configured for setup analysis: skipping. (UIC-058)
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 1
+        -report_by design
+Design : digital_door_lock
+Version: W-2024.09-SP2
+Date   : Thu Nov 26 10:52:16 2026
+****************************************
+
+  Startpoint: door_unlock_reg (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: door_unlock (output port clocked by clk)
+  Mode: WORST
+  Corner: WORST
+  Scenario: WORST
+  Path Group: **reg2out_default**
+  Path Type: max
+
+  Point                                            Incr       Path  
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                            0.000      0.000
+  clock network delay (propagated)                 0.000      0.000
+
+  door_unlock_reg/CK (SAEDLVT14_FSDPRBQ_V2_0P5)    0.000      0.000 r
+  door_unlock_reg/Q (SAEDLVT14_FSDPRBQ_V2_0P5)     0.189      0.189 f
+  door_unlock (out)                                0.001      0.190 f
+  data arrival time                                           0.190
+
+  clock clk (rise edge)                           20.000     20.000
+  clock network delay (propagated)                 0.000     20.000
+  clock uncertainty                               -0.200     19.800
+  output external delay                           -2.000     17.800
+  data required time                                         17.800
+  --------------------------------------------------------------------------
+  data required time                                         17.800
+  data arrival time                                          -0.190
+  --------------------------------------------------------------------------
+  slack (MET)                                                17.610
+
+
+1

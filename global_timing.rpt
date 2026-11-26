@@ -1,0 +1,19 @@
+Warning: Scenario WORST is not configured for hold analysis: skipping. (UIC-058)
+Warning: Scenario BEST is not configured for setup analysis: skipping. (UIC-058)
+****************************************
+Report : global timing
+        -format { narrow }
+        -report_by design
+        -pba_mode path
+Design : digital_door_lock
+Version: W-2024.09-SP2
+Date   : Thu Nov 26 10:52:16 2026
+****************************************
+
+No setup violations found.
+
+
+No hold violations found.
+
+
+1

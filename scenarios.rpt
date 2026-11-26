@@ -1,0 +1,14 @@
+****************************************
+Report : scenario
+Design : digital_door_lock
+Version: W-2024.09-SP2
+Date   : Thu Nov 26 10:52:18 2026
+****************************************
+
+                                                                     Leakage  Dynamic                              Cell  Signal
+Name            Mode            Corner          Active  Setup  Hold  Power    Power    Max_tran  Max_cap  Min_cap  EM    EM
+----------------------------------------------------------------------------------------------------------------------------------
+BEST *          BEST            BEST            true    false  true  true     false    true      true     true     false false
+WORST *         WORST           WORST           true    true   false true     true     true      true     true     false false
+
+1

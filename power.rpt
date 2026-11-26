@@ -1,0 +1,60 @@
+****************************************
+Report : power
+        -significant_digits 2
+Design : digital_door_lock
+Version: W-2024.09-SP2
+Date   : Thu Nov 26 10:52:16 2026
+****************************************
+Information: Activity for scenario WORST was cached, no propagation required. (POW-005)
+Mode: WORST
+Corner: WORST
+Scenario: WORST
+Voltage: 0.71
+Temperature: 125.00
+
+Voltage Unit         : 1V
+Capacitance Unit     : 1pF
+Time Unit            : 1ns
+Temperature Unit     : 1C
+Dynamic Power Unit   : 1pW
+Leakage Power Unit   : 1pW
+
+Switched supply net power scaling:
+scaling for leakage power
+
+Supply nets:
+VDD (power) probability 1.00 (default)
+VSS (ground) probability 1.00 (default)
+Warning: Power table extrapolation (extrapolation mode) for port X on cell ctmi_21 for parameter Cout. Lowest table value = 0.001000, highest table value = 0.190800, value = 0.000660 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port X on cell ctmi_20 for parameter Cout. Lowest table value = 0.001000, highest table value = 0.159000, value = 0.000772 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port X on cell ctmTdsLR_1_1761 for parameter Cout. Lowest table value = 0.001000, highest table value = 0.110400, value = 0.000694 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port X on cell ctmTdsLR_2_1762 for parameter Cout. Lowest table value = 0.001000, highest table value = 0.110400, value = 0.000507 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CK on cell door_unlock_reg for parameter Tinp. Lowest table value = 0.001000, highest table value = 1.000000, value = 0.000019 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CK on cell wrong_password_reg for parameter Tinp. Lowest table value = 0.001000, highest table value = 1.000000, value = 0.000019 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port Q on cell door_unlock_reg for parameter Tinp. Lowest table value = 0.001000, highest table value = 1.000000, value = 0.000019 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port Q on cell wrong_password_reg for parameter Tinp. Lowest table value = 0.001000, highest table value = 1.000000, value = 0.000019 (POW-046)
+
+  Cell Internal Power    = 2.52e+05 pW ( 79.2%)
+  Net Switching Power    = 6.62e+04 pW ( 20.8%)
+Total Dynamic Power      = 3.18e+05 pW (100.0%)
+
+Cell Leakage Power       = 7.05e+05 pW
+
+
+  Attributes
+  ----------
+      u  -  User defined power group
+      i  -  Includes clock pin internal power
+
+Power Group         Internal Power        Switching Power          Leakage Power            Total Power    (   %  )    Attrs
+-----------------------------------------------------------------------------------------------------------------------------
+io_pad                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+memory                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+black_box                 0.00e+00               0.00e+00               3.09e-11               3.09e-11    (  0.0%)         
+clock_network             1.78e+05               0.00e+00               0.00e+00               1.78e+05    ( 17.4%)        i
+register                  4.71e+03               5.92e+04               4.22e+05               4.86e+05    ( 47.5%)         
+sequential                0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+combinational             6.89e+04               7.00e+03               2.83e+05               3.59e+05    ( 35.1%)         
+-----------------------------------------------------------------------------------------------------------------------------
+Total                     2.52e+05 pW            6.62e+04 pW            7.05e+05 pW            1.02e+06 pW
+1

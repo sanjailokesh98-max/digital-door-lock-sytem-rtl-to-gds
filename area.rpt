@@ -1,0 +1,23 @@
+****************************************
+Report : area
+Design : digital_door_lock
+Version: W-2024.09-SP2
+Date   : Thu Nov 26 10:52:16 2026
+****************************************
+
+Number of ports:                           11
+Number of nets:                            18
+Number of cells:                            9
+Number of combinational cells:              7
+Number of sequential cells:                 2
+Number of macros/black boxes:               0
+Number of buf/inv:                          1
+Number of references:                       9
+
+Combinational area:                      2.62
+Buf/Inv area:                            0.18
+Noncombinational area:                   2.58
+Macro/Black Box area:                    0.00
+
+Total cell area:                         5.19
+1

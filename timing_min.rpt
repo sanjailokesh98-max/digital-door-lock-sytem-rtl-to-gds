@@ -1,0 +1,46 @@
+Warning: Invalid user port delay or slew threshold setting, use default setting. (TIM-205)
+Warning: Scenario WORST is not configured for hold analysis: skipping. (UIC-058)
+****************************************
+Report : timing
+        -path_type full
+        -delay_type min
+        -max_paths 1
+        -report_by design
+Design : digital_door_lock
+Version: W-2024.09-SP2
+Date   : Thu Nov 26 10:52:16 2026
+****************************************
+
+  Startpoint: door_unlock_reg (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: door_unlock_reg (rising edge-triggered flip-flop clocked by clk)
+  Mode: BEST
+  Corner: BEST
+  Scenario: BEST
+  Path Group: clk
+  Path Type: min
+
+  Point                                            Incr       Path  
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                            0.000      0.000
+  clock network delay (propagated)                 0.000      0.000
+
+  door_unlock_reg/CK (SAEDLVT14_FSDPRBQ_V2_0P5)    0.000      0.000 r
+  door_unlock_reg/Q (SAEDLVT14_FSDPRBQ_V2_0P5)     0.189      0.189 f
+  ctmi_21/X (SAEDLVT14_OA21B_1)                    0.014      0.203 f
+  door_unlock_reg/D (SAEDLVT14_FSDPRBQ_V2_0P5)     0.000      0.203 f
+  data arrival time                                           0.203
+
+  clock clk (rise edge)                            0.000      0.000
+  clock network delay (propagated)                 0.000      0.000
+  door_unlock_reg/CK (SAEDLVT14_FSDPRBQ_V2_0P5)    0.000      0.000 r
+  clock uncertainty                                0.200      0.200
+  library hold time                               -0.001      0.199
+  data required time                                          0.199
+  --------------------------------------------------------------------------
+  data required time                                          0.199
+  data arrival time                                          -0.203
+  --------------------------------------------------------------------------
+  slack (MET)                                                 0.003
+
+
+1

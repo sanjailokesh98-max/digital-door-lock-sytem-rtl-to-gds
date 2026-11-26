@@ -1,0 +1,29 @@
+Information: The command 'report_placement' cleared the undo history. (UNDO-016)
+****************************************
+Report : report_placement
+Design : digital_door_lock
+Version: W-2024.09-SP2
+Date   : Thu Nov 26 10:52:16 2026
+****************************************
+  ==================
+  Note: Including violations of fixed cells or between fixed pairs of cells. 
+        To ignore violations of / between fixed cells, enable -ignore_fixed. 
+  ==================
+
+  Wire length report (all)
+  ==================
+  wire length in design digital_door_lock: 52.731 microns.
+  wire length in design digital_door_lock (see through blk pins): 52.731 microns.
+
+  Physical hierarchy violations report
+  ====================================
+  Violations in design digital_door_lock:
+     0 cells have placement violation.
+
+  Voltage area violations report
+  ====================================
+  Voltage area placement violations in design digital_door_lock:
+     0 cells placed outside the voltage area which they belong to.
+
+Information: Default error view digital_door_lock_dpplace.err is created in GUI error browser. (DPP-054)
+1

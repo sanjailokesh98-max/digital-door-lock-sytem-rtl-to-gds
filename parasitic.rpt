@@ -1,0 +1,19 @@
+
+ mapping = /home/vlsi/Synopsys/Fusa_EDK/SAED14nm_EDK_08_2025/SAED14_EDK/SAED14nm_EDK_TECH_DATA/map/saed14nm_tf_itf_tluplus.map 
+
+
+Corner: BEST
+ early_spec = CBest
+ CBest = /home/vlsi/Synopsys/Fusa_EDK/SAED14nm_EDK_08_2025/SAED14_EDK/SAED14nm_EDK_TECH_DATA/tlup/saed14nm_1p9m_Cmax.tlup 
+ late_spec = CBest
+ CBest = /home/vlsi/Synopsys/Fusa_EDK/SAED14nm_EDK_08_2025/SAED14_EDK/SAED14nm_EDK_TECH_DATA/tlup/saed14nm_1p9m_Cmax.tlup 
+
+
+Corner: WORST
+ early_spec = CWorst
+ CWorst = /home/vlsi/Synopsys/Fusa_EDK/SAED14nm_EDK_08_2025/SAED14_EDK/SAED14nm_EDK_TECH_DATA/tlup/saed14nm_1p9m_Cmin.tlup 
+ late_spec = CWorst
+ CWorst = /home/vlsi/Synopsys/Fusa_EDK/SAED14nm_EDK_08_2025/SAED14_EDK/SAED14nm_EDK_TECH_DATA/tlup/saed14nm_1p9m_Cmin.tlup 
+
+library = ddls_lib 
+1
